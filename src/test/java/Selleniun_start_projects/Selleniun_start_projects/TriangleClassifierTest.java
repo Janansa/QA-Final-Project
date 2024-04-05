@@ -83,8 +83,7 @@ public class TriangleClassifierTest {
         submitSides("-1", "-5", "-5");
         assertEquals("Error: Not a Triangle", getResult());
     }
-    
-    // non-numeric
+
     @Test
     public void test11() {
         submitSides("a", "b", "c");
