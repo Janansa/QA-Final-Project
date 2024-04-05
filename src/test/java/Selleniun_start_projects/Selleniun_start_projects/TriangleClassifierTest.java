@@ -9,9 +9,7 @@ import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TriangleClassifierTest {
 	
@@ -138,59 +136,6 @@ public class TriangleClassifierTest {
             driver.quit();
         }
     }
-    /*
-	@Test
-    public void testEquilateralTriangle() {
-        assertEquals("Equilateral", classifyTriangle(3, 3, 3));
-    }
-
-    @Test
-    public void testIsoscelesTriangle() {
-        assertEquals("Isosceles", classifyTriangle(5, 5, 3));
-    }
-
-    @Test
-    public void testScaleneTriangle() {
-        assertEquals("Scalene", classifyTriangle(4, 5, 6));
-    }
-
-    @Test
-    public void testInvalidTriangle() {
-        assertEquals("Not a triangle", classifyTriangle(1, 2, 3));
-    }
-
-    @Test
-    public void testZeroLength() {
-        assertEquals("Invalid length", classifyTriangle(0, 5, 5));
-    }
-
-    @Test
-    public void testNegativeLength() {
-        assertEquals("Invalid length", classifyTriangle(-1, 5, 5));
-    }
-
-    // Note: This test is to demonstrate the concept. Non-numeric input handling depends on the method's input type/signature.
-    @Test(expected = NumberFormatException.class)
-    public void testNonNumericLength() {
-        assertEquals("Invalid input", classifyTriangle(Integer.parseInt("a"), 5, 5));
-    }
-    
-    public static String classifyTriangle(int a, int b, int c) {
-            if (a <= 0 || b <= 0 || c <= 0) {
-                return "Invalid length";
-            }
-            if (a == b && b == c) {
-                return "Equilateral";
-            }
-            if (a >= b + c || b >= a + c || c >= a + b) {
-                return "Not a triangle";
-            }
-            if (a == b || b == c || a == c) {
-                return "Isosceles";
-            }
-            return "Scalene";
-        }
-    */
 
 }
 
