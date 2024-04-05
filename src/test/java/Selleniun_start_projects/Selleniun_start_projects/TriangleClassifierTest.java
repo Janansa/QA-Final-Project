@@ -21,12 +21,8 @@ public class TriangleClassifierTest {
     public void setUp() {
     	
     	System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.34.0-win32\\geckodriver.exe");
-    	//WebDriverManager.firefoxdriver().setup();
-
         driver = new FirefoxDriver();
-     //   driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-
-
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.get("https://testpages.eviltester.com/styled/apps/triangle/triangle001.html");
     }
 
